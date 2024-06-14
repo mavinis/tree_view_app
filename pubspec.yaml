@@ -1,0 +1,96 @@
+name: tree_view_app
+description: "A Tree View Application that shows companies Assets."
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+# ⬇⬇ Dependencies ⬇⬇
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  ## GENERATORS ##
+  freezed_annotation: ^2.4.1
+  json_serializable: ^6.8.0
+  json_annotation: ^4.9.0
+
+  ## LOCALIZATION ##
+  flutter_localizations:
+    sdk: flutter
+
+  ## UTILS ##
+  flutter_modular: ^6.3.4
+  async: ^2.11.0
+  collection: ^1.18.0
+  #dartz: ^0.0.0
+  dart_either: ^1.0.0
+  diacritic: ^0.1.5
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.6
+  intl: ^0.19.0
+  package_info_plus: ^8.0.0
+  retry: ^3.1.2
+
+  ## SERVICES ##
+  firebase_core: ^3.1.0
+  firebase_auth: ^5.1.0
+  firebase_messaging: ^15.0.1
+  firebase_crashlytics: ^4.0.1
+  cloud_firestore: ^5.0.1
+  cloud_functions: ^5.0.1
+  flutter_local_notifications: ^17.1.2
+
+  ## UI ##
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  material_symbols_icons: ^4.2762.0
+  responsive_builder: ^0.7.0
+  sliver_tools: ^0.2.12
+  badges: ^3.1.2
+  recase: ^4.1.0
+
+  # ⬇⬇ Dev Dependencies ⬇⬇
+
+dev_dependencies:
+
+  ## TEST ##
+  flutter_test:
+    sdk: flutter
+
+  ## LINTER ##
+  flutter_lints: ^4.0.0
+
+  ## GENERATORS ##
+  build_runner: ^2.4.11
+  flutter_gen_runner: ^5.5.0+1
+  flutter_flavorizr: ^2.2.3
+  freezed: ^2.5.2
+  # flutter pub run flutter_flavorizr
+  # flutter pub run build_runner watch
+  # flutter pub run build_runner build --delete-conflicting-outputs
+
+# ⬇⬇ Flutter generators config ⬇⬇
+
+flutter:
+  uses-material-design: true
+  #assets:
+  #  - assets/
+  #  - assets/images/
+  #  - google_fonts/
+  #fonts:
+  #  - family:
+  #    fonts:
+  #      - asset: fonts/
+
+flutter_gen:
+  output: lib/assets/
+  integrations:
+    flutter_svg: true
